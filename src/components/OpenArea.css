@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+.open-area-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #23272b 0%, #181c1f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.open-area-content {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(32, 32, 32, 0.98);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(255,60,60,0.10);
+  margin: 40px 0;
+  padding: 48px 36px;
+  border: 2px solid #ff3c3c;
+}
+
+@media (max-width: 900px) {
+  .open-area-content {
+    padding: 24px 8px;
+  }
+}

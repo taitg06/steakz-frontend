@@ -1,0 +1,82 @@
+.soul-steaks-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.soul-steaks-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-svg {
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.soul-steaks-logo:hover .logo-svg {
+  filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.5));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.logo-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  color: #e6caa8;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .soul-steaks-logo {
+    gap: 0.7rem;
+  }
+
+  .logo-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-title {
+    font-size: 1.3rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo-title {
+    font-size: 1.1rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+}

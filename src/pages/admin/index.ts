@@ -1,0 +1,10 @@
+export { default as Dashboard } from './Dashboard';
+export { default as Users } from './Users';
+export { default as Branches } from './Branches';
+export { default as Reports } from './Reports';
+export { default as MenuManagement } from './MenuManagement';
+export { default as Inventory } from './Inventory';
+export { default as Staff } from './Staff';
+export { default as Analytics } from './Analytics';
+export { default as Checkout } from './Checkout';
+export { default as Reservations } from './Reservations';
