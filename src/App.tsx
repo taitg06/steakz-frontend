@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { createBrowserRouter, RouterProvider, Outlet, NavLink } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,6 +19,8 @@ import CashierPOS from './pages/CashierPOS';
 import ChefKitchen from './pages/ChefKitchen';
 import './App.css';
 import './pages/admin/AdminStyles.css';
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
 
 const RootLayout: React.FC = () => (
   <div className="app-root">
